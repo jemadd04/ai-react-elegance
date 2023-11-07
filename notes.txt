@@ -1,0 +1,10 @@
+When starting to work with an LLM, it is not initially aware of any of your data.
+
+Typically to build an AI application that is aware of your data, a common pattern is Retrieval Augmented Generation (RAG). If users are doing something with this app, even before it goes to your LLM, it goes and searches and retrieves data from wherever your data is located.
+
+This requires hybrid search, which requires vectors and keyword match. 
+
+Once you get back that data that you are now matching with what the user is trying to do, you create a context and send that context to the LLM. The LLM now knows about your data within context of what is being asked of it. It will then return an output or go do something.
+
+How do you build this application? What is a typical architecture? 
+Normally there's a front end (React, Angular, etc) connected to a backend API (Node JS, Python, etc). 
